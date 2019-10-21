@@ -1,0 +1,154 @@
+/**index.wxss**/
+
+.top{
+  margin-top: 12px;
+  display: flex;
+  justify-items: center;
+}
+.search-bar{
+  
+  display: flex;
+  width: 250px;
+  background-color: #f7fcfe;
+  margin-right: 50px; 
+}
+.search-bar input{
+  background-color: #f7fcfe;
+  border-radius: 10px 10px 10px 10px;
+  height: 32px;
+  font-size: 17px;
+  color: #cecece;
+  margin-left: 10px;
+}
+.search-icon{
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+.toplay image{
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 20px;
+  top:15px;
+}
+.clear-icon{
+margin-top: 5px;
+}
+.search-res{
+  width: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50px;
+}
+.swiper{
+  margin-top: 20px;
+width: 90%;
+height: 150px;
+
+}
+.slide-image{
+  width: 100%;
+  height: 150px;
+  border-radius: 10px 10px 10px 10px;
+}
+.list-btn{
+ margin-top: 5px;
+width: 100%;
+height: 120px;
+border-bottom: 1px solid #cecece;
+  overflow: hidden;
+}
+.btn-warp{
+  
+  float: left;
+  padding: 20px 10px;
+  width: 33.33333333%;
+  box-sizing: border-box;  
+  
+}  
+  
+.top-btn image{
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+.btn-text{
+   margin-top: 5px;
+  display: block;
+  text-align: center;
+  color: #000000;
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.hot-playlist{
+margin-top: 10px;
+width: 100%;
+height: 390px;
+border-bottom: 1px solid #cecece;
+  overflow: hidden;
+  margin-left: 15px;
+}
+.list-title{
+  font-size: 16px;
+}
+.single-list{
+ 
+ margin-top: 10px;
+ width: 33.33333333%;
+ float: left;
+}
+.list-img{
+  width: 110px;
+  height: 110px;
+  border-radius: 5px 5px 5px 5px;
+}
+.list-name{
+  font-size: 13px;
+  width:110px;
+}
+.new-ablum{
+margin-top: 20px;
+width: 90%;
+height: 120px;
+border: 2px solid black;
+}
+.search{
+  position: absolute;
+  right: 20px;
+  color: #96514d;
+}
+.cancel{
+  position: absolute;
+  right: 20px;
+  color: #96514d;
+}
+
+.song-name{
+ font-size: 16px;
+ margin-left: 25px;
+}
+.single{
+  margin-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  
+  border-bottom:1px solid #cecece;
+}
+.singer{
+  margin-left: 25px;
+  font-size: 14px;
+  color: #1296db
+}
+.search-down{
+  margin-top: 5px;
+  display: flex;
+}
+.ablum-name{
+  font-size: 14px;
+  color: #1296db;
+  margin-left: 20px;
+}

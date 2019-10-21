@@ -1,0 +1,37 @@
+<!--pages/playmusic/playmusic.wxml-->
+<view class='container'>
+  <view class="cd">
+    <image class="{{isPlayMusic? 'cd-img' :'cd-img-sta' }}" src="{{isPlayMusic? songImg : '/images/play/cd.png'}}"></image>
+  </view>
+
+  <view class='song-name'><text>{{isPlayMusic? songName : "没有音乐"}}</text></view>
+  <view class='singer'><text>{{isPlayMusic? singer : "歌手"}}</text></view>
+  <view class="slider">
+      <view class="section section_gap">
+        <view class="body-view">
+          <slider class='progress' bindchange="sliderChange" show-value activeColor="#D43C33"  block-size="15" value='{{musicTime}}' />
+        </view>
+      </view>
+    </view>
+    <view class='showTime'>{{showTime1}}/{{showTime2}}</view>
+  <view class="paly-control">
+    <view class="play-btn">
+      <view class='lyric' bindtap='onTapToLyric'>
+        <image src='/images/play/lyric.png'></image>
+      </view>
+      <view class='pre' bindtap='preSong'>
+        <image src='/images/play/pre.png'></image>
+      </view>
+      <view class='play' bindtap="playSong">
+        <image src="{{isPlayMusic? '/images/play/stop.png':'/images/play/play.png'}}"></image>
+      </view>
+      <view class='next' bindtap='nextSong'>
+        <image src='/images/play/next.png'></image>
+      </view>
+      <view class='comment' bindtap='onTaptoComment'>
+        <image src='/images/play/comment.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='foot'></view>
+</view>

@@ -1,0 +1,23 @@
+/* pages/me/collectmusic/collectmusic.wxss */
+.musiclist{
+  margin-top: 5px;
+  display: flex;
+  margin-left: 15px; 
+  border-bottom:1px solid  #e6e6e6;
+}
+.list-cover image{
+  width: 50px;
+  height: 50px;
+  border-radius: 4px 4px 4px 4px;
+}
+.list-left{
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 25px;
+}
+.list-right{
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 25px;
+  margin-left: 15px;
+}

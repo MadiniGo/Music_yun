@@ -1,0 +1,18 @@
+<!--pages/me/collectmusic/collectmusic.wxml-->
+<view class='collectMusic'>
+  <view class='musiclist' wx:for="{{musicList}}" wx:for-item="musicList" wx:index="index" wx:key="*"
+  data-music-list-id="{{musicList.playListId}}" bindtap='onTapToMusicListDetail'>
+    <view class='list-left'>
+      <view class='list-cover'>
+        <image src="{{musicList.coverImgUrl}}"></image>
+      </view>
+    </view>
+    <view class='list-right'>
+      <view class='list-title'>
+        <text>{{musicList.name}}</text>
+      </view>
+      <view class='list-num-author'>{{musicList.musicCount}}，by  {{musicList.creatorName}}</view>
+    </view>
+   
+  </view>
+</view>

@@ -1,0 +1,27 @@
+<!--pages/me/collectmusic/musiclistdetail/musiclistdetail.wxml-->
+<view class="top">
+  <view class="cover-img">
+    <image class="coverimg" src='{{playListDetail.coverImg}}'></image>
+  </view>
+  <view class="top-right">
+    <view class="list-name">{{playListDetail.listName}}</view>
+    <view class="creator">{{playListDetail.creator}}</view>
+    <view class="updateTime">更新时间：{{playListDetail.updateTime}}</view>
+    <view class="tags"></view>
+  </view>
+</view>
+<view class="description"><view class="description-words">{{playListDetail.description? playListDetail.description:"用户没有添加描述"}}</view></view>
+<view class="play-btn"><view class="play-all" bindtap="playListAll">▶ 列表播放</view>
+<view class="back-btn" bindtap="backToDetail">≡ 返回歌单</view>
+</view>
+<view class='hr'></view>
+<view class="playlist" wx:for="{{songList}}" wx:for-item="songList" wx:for-index="index" wx:key="*"
+data-song-id='{{songList.songId}}' data-song-name='{{songList.songName}}'  data-song-img='{{songList.songImg}}' data-album-name='{{songList.albumName}}' data-singer='{{songList.songArtists}}' bindtap='playSong'>
+  <view class="music-img">
+    <image class="musicimg" src='{{songList.songImg}}'></image>
+  </view>
+  <view class="list-right">
+  <view class="music-name">{{songList.songName}}</view>
+  <view class="music-player">{{songList.songArtists}}</view>
+  </view>
+</view>

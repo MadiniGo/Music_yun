@@ -1,0 +1,53 @@
+<view hidden='{{isLogin}}' class='login' bindtap='onTapToLogin'>点击登录</view>
+<view hidden='{{!isLogin}}' class="content">
+  <view class="header">
+    <image class="radius-boder" src="{{isLogin? loginMes.avatarUrl:defaultAvatarUrl}}"></image>
+    <view class="left">
+      <view class="nickname">
+        <text>昵称：</text>{{isLogin? loginMes.nickname:"我的昵称"}}</view>
+    </view>
+  </view>
+  <view class="melist">
+    <view class="list-single">
+      <view class="list-data">{{isLogin?loginMes.follows:"0"}}</view>
+      <view class='list-title'>关注</view>
+    </view>
+    <view class="list-single">
+      <view class="list-data">{{isLogin?loginMes.eventCount:"0"}}</view>
+      <view class='list-title'>动态</view>
+    </view>
+    <view class="list-single">
+      <view class="list-data">{{isLogin?loginMes.followeds:"0"}}</view>
+      <view class='list-title'>粉丝</view>
+    </view>
+    <view class="list-single">
+      <view class="list-data">
+        <image class="modify" src='/images/icon/modify.png'></image>
+      </view>
+      <view class='list-title' bindtap='onTapToDetail'>详情</view>
+    </view>   
+  </view>
+  <view class="mymusic-list">
+  <view class='mymusic-list-line' bindtap="onTapToCollectMusic">
+  <view><image src='/images/icon/music1.png'></image></view>
+  <view class="mymusic-title">收藏歌单</view>
+  <view class='mymusic-num'></view>
+  </view>
+  <view class='mymusic-list-line'>
+  <view><image src='/images/icon/collect.png'></image></view>
+  <view class="mymusic-title">我的收藏</view>
+  <view class='mymusic-num'></view>
+  </view>
+  <view class='mymusic-list-line'>
+  <view><image src='/images/icon/music.png'></image></view>
+  <view class="mymusic-title">最近播放</view>
+  <view class='mymusic-num'></view>
+  </view>
+  <view class='mymusic-list-line'>
+  <view><image src='/images/icon/fm.png'></image></view>
+  <view class="mymusic-title">我的电台</view>
+  <view class='mymusic-num'></view>
+  </view>
+  </view>
+  <view class="loginout" bindtap="loginOut">退出登录</view>
+</view>

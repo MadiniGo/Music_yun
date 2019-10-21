@@ -1,0 +1,17 @@
+<view class="login-form">
+  <form bindsubmit="formSumbit">
+    <view class="account">
+      <view class="title">账号</view>
+      <view class="phonenum"><input name="phoneNum" placeholder="手机号码" type="text" maxlength="11" bindinput="phoneNumInput"></input>
+      </view>
+    </view>
+    <view class="hr"></view>
+    <view class="password">
+      <view class="title">密码</view>
+      <view class="passwd"><input name="passwd" type="password" placeholder="输入密码"        bindinput="passwdInput"></input></view>
+    </view>
+    <view class="hr"></view>
+    <button form-type="sumbit" class="btn" disabled='{{disabled}}' type='{{btnstate}}' bindtap="login">登录</button>
+  </form>
+  <view class='link' bindtap='onTapToIndex'>首页>></view>
+</view>

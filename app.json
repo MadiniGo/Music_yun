@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/test/test",
+    "pages/me/me",
+    "pages/login/login",
+    "pages/me/register/register",
+    "pages/playmusic/playmusic",
+    "pages/me/collectmusic/collectmusic",
+    "pages/me/medetail/medetail",
+    "pages/me/collectmusic/musiclistdetail/musiclistdetail",
+    "pages/fm/fm"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#96514d",
+    "navigationBarTitleText": "豆沙音乐",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "backgroundColor": "white",
+    "color": "#767c6b",
+    "selectedColor": "#96514d",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "发现",
+        "iconPath": "/images/icon/dou.png",
+        "selectedIconPath": "/images/icon/douSelected.png"
+      },
+      {
+        "pagePath": "pages/fm/fm",
+        "text": "Fm",
+        "iconPath": "/images/icon/Fma.png",
+        "selectedIconPath": "/images/icon/FmaSelected.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "/images/icon/me.png",
+        "selectedIconPath": "/images/icon/meSelected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": [
+    "audio"
+  ]
+  
+}

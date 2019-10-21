@@ -1,0 +1,33 @@
+/* pages/me/me.wxss */
+.login-form{
+  margin: 30px  ;
+}
+.account{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.phonenum{
+  margin-left: 25px;
+}
+.hr{
+  width: 95%;
+  border: 1px solid #cccccc;
+  margin-bottom: 20px
+}
+.password{
+display: flex;
+flex-direction: row;
+margin-bottom: 10px;
+}
+.passwd{
+  margin-left: 25px;
+}
+.link{
+  margin-top: 20px;
+  color:  red;
+  position: absolute;
+  right: 30px;
+}

@@ -1,0 +1,89 @@
+/* pages/me/collectmusic/musiclistdetail/musiclistdetail.wxss */
+.top{display: flex;
+    margin-top: 20px;
+    align-items: center;
+    margin-left:15px;
+    border-bottom:1px solid  #e6e6e6;
+    padding-bottom: 10px;
+}
+.coverimg{
+  width: 120px;
+  height: 120px;
+  border-radius: 5px 5px 5px 5px;
+}
+.top-right{
+  margin-left: 20px;
+  font-size:16px; 
+  line-height:25px; 
+}
+.creator{
+  color: #96514d;
+}
+.updateTime{
+ color: #8a8a8a;
+}
+.description{
+  margin-left: 15px;
+  margin-top: 10px;
+  width: 100%;
+  border-bottom:1px solid  #e6e6e6;
+  padding-bottom: 10px;
+}
+.description-words{
+  color:  #cdcdcd;
+  font-size:15px;
+  align-items: center;
+  padding-right:10px; 
+}
+.play-btn{
+  margin-left: 15px;
+  margin-top: 15px;
+  width: 100%;
+  border-bottom:1px solid  #e6e6e6;
+  padding-bottom: 15px;
+  display: flex
+}
+.play-all{
+  height: 35px;
+  color:#96514d;
+  width: 130px;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #f8f3f2;
+  text-align: center;
+  padding-top: 10px
+}
+.back-btn{
+  height: 35px;
+  color:#96514d;
+  width: 130px;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #f8f3f2;
+  text-align: center;
+  padding-top: 10px;
+  position: absolute;
+  right: 20px
+}
+.playlist{
+  display: flex;
+  margin-top: 10px;
+  margin-left: 15px;
+
+  border-bottom:1px solid  #e6e6e6;
+ 
+}
+.musicimg{
+  width:50px;
+  height: 50px;
+  
+}
+.list-right{
+  margin-left: 15px;
+  margin-top: 5px;
+}
+.music-name{
+font-size: 15px;
+}
+.music-player{
+font-size: 14px;
+color:  #cdcdcd;
+}

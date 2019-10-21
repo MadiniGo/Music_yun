@@ -1,0 +1,71 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="top">
+    <!-- <icon type='search' class='search-icon'  src="/images/search"></icon> -->
+    <view class="search-bar">
+      <input type='text' placeholder='  输入歌曲 ヾ(*´▽‘*)ﾉ' focus='{{inputShowed}}' bindinput='searchInput' value='{{inputVal}}'></input>
+      <view class="clear-icon" wx:if="{{inputVal.length>0}}" bindtap='onClear'>
+        <icon type='clear' size='18px' src="/images/cancel.png"></icon>
+      </view>
+    </view>
+    <view class="toplay">
+      <image class='play' src="/images/toplay.png" bindtap='onTapToPlay' hidden='{{inputShowed}}'></image>
+    </view>
+    <!-- <view class='search' hidden='{{inputShowed}}' bindtap='showInput'>搜索</view> -->
+    <view class='cancel' bindtap='cancelInput' hidden='{{!inputShowed}}' bindtap='hideInput'>取消</view>
+  </view>
+  <view class='search-res' hidden='{{!inputShowed}}'>
+    <block wx:for="{{searchResult}}" wx:for-item="searchRes" wx:index="index" wx:key="*">
+      <view class='single' bindtap='playMusic' data-song-id='{{searchRes.songId}}' data-song-url='{{searchRes.songUrl}}' data-img-url="{{searchRes.imgUrl}}" data-song-name='{{searchRes.songName}}' data-album-name='{{searchRes.albumName}}' data-singer='{{searchRes.singer}}'
+        bindtap='playSong'>
+        <view class='song-name'>{{searchRes.songName}}</view>
+        <view class='search-down'>
+          <view class='singer'>{{searchRes.singer}}</view>
+          <view class='ablum-name'>专辑：{{searchRes.albumName}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="swiper" hidden='{{inputShowed}}'>
+    <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}'>
+      <block wx:for="{{bannerUrls}}" wx:key="*">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="list-btn">
+    <view class='btn-warp'>
+      <view class='top-btn'>
+        <image src='/images/day.png'></image>
+      </view>
+      <view class='btn-text'>每日</view>
+    </view>
+    <view class='btn-warp'>
+      <view class='top-btn'>
+        <image src='/images/tuijian (3).png'></image>
+      </view>
+      <view class='btn-text'>推荐</view>
+    </view>
+    <view class='btn-warp'>
+      <view class='top-btn'>
+        <image src='/images/电台.png'></image>
+      </view>
+      <view class='btn-text'>FM</view>
+    </view>
+  </view>
+  <view class="hot-playlist">
+    <view class='list-title'>推荐歌单 ♪</view>
+    <view class='play-list'>
+      <block wx:for="{{personalList}}" wx:for-item="list" wx:key="*">
+        <view class='single-list' data-list-id='{{list.listId}}' bindtap='onTapToListDetail'>
+           <image class='list-img' src='{{list.picUrl}}'></image>
+           <view class='list-name'>{{list.listName}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <!-- <view class="new-ablum"></view>
+  <view class="personal"></view> -->
+</view>
