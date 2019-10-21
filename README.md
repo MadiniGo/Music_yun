@@ -6,24 +6,24 @@
 
 ## 首页
 
-![](C:\Users\Mr Li\Desktop\_20191021222936.png)
+![](/pic/_20191021222936.png)
 
 ## 搜索
 
-![](C:\Users\Mr Li\Desktop\_20191021223019.png)
+![](/pic/_20191021223019.png)
 
 ## 歌单列表
 
-![](C:\Users\Mr Li\Desktop\_20191021223057.png)
+![](/pic/_20191021223057.png)
 
 ## 歌单详情
 
-![](C:\Users\Mr Li\Desktop\_20191021223110.png)
+![](/pic/_20191021223110.png)
 
 ## 音乐播放
 
-![](C:\Users\Mr Li\Desktop\_20191021223124.png)
+![](/pic/_20191021223124.png)
 
 ## 个人中心
 
-![1571671925715](C:\Users\Mr Li\AppData\Roaming\Typora\typora-user-images\1571671925715.png)
+![1571671925715](/pic/_20191021223039.png)
